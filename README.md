@@ -22,7 +22,7 @@
 - [config](https://github.com/lorenwest/node-config) - Managing configuration
 
 
-## What will be needed to follow along?
+## What will be needed?
 - [Postman](https://www.postman.com/downloads/)
 - [Node.js](https://nodejs.org/en/)
 - [MongoDB](https://www.mongodb.com/try/download/community)
