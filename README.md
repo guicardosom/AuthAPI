@@ -10,7 +10,7 @@
 7. Access token
 8. Refresh tokens
 
-## What technology are we using?
+## What technologies are being used?
 - [TypeScript](https://www.typescriptlang.org/) - Static tye checking 
 - [Express@5](https://expressjs.com/en/5x/api.html) - Web server
 - [Typegoose](https://typegoose.github.io/typegoose/) - Mongoose wrapper for creating TypeScript interfaces and models
@@ -22,21 +22,7 @@
 - [config](https://github.com/lorenwest/node-config) - Managing configuration
 
 
-## What will you need to follow along?
+## What will be needed to follow along?
 - [Postman](https://www.postman.com/downloads/)
 - [Node.js](https://nodejs.org/en/)
 - [MongoDB](https://www.mongodb.com/try/download/community)
-
-## Video structure
-1. Demo
-2. Code walk-through
-3. Bootstrap application
-4. User API
-    1. Create user
-    2. Verify user
-    3. Request reset password code
-    4. Reset password
-    5. Get current user
-5. Authentication API
-    1. Create user session
-    2. Get new access token with refresh tokens
