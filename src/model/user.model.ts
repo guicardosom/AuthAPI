@@ -1,5 +1,4 @@
 import { Severity, getModelForClass, modelOptions, pre, prop, DocumentType } from "@typegoose/typegoose";
-import { nanoid } from "nanoid";
 import argon2d from "argon2";
 import log from "../utils/logger";
 
@@ -14,10 +13,10 @@ import log from "../utils/logger";
 @modelOptions(
     {
         schemaOptions: {
-            timestamps: true
+            timestamps: true // adds createdAt and updatedAt fields
         },
         options: {
-            allowMixed: Severity.ALLOW
+            allowMixed: Severity.ALLOW // allows mixed types in arrays
         }
     }
 )
@@ -34,7 +33,7 @@ export class User {
     @prop({required: true})
     password: string;
 
-    @prop({required: true, default: () => nanoid()})
+    @prop({required: true, default: () => crypto.randomUUID()})
     verificationCode: string;
 
     @prop()
