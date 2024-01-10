@@ -7,6 +7,9 @@ import router from './routes';
 
 const app = express();
 
+// parses JSON payloads incoming requests 
+app.use(express.json());
+
 app.use(router);
 
 const port = config.get('port');
